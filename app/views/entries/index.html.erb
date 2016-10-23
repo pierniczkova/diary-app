@@ -3,4 +3,4 @@
     <p><%= entry.date %></p>
 <p><%= truncate(entry.contents, length: 200, separator: ' ', omission: "... ") {link_to " Continue", entry_path(entry)}  %></p>
 <% end %>
-<%= link_to("New entry", new_entry_path) %>
+<%= link_to("New entry", new_entry_path, class: "btn btn-default") %>
